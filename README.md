@@ -1,4 +1,4 @@
-## Illustrator Extension Application
+## Processing Paint Program
 
 #### Authors
 
