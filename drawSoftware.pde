@@ -9,10 +9,7 @@ float bB;
 int penSize = 1;
 
 void setup(){
-  //bR=random(255);
-  //bG=random(255);
-  //bB=random(255);
-  
+
   size(800,650);
   background(255);
 }
@@ -122,9 +119,6 @@ void mousePressed(){
   }
   
   if(mousePressed && mouseX>550 && mouseX<800 && mouseY>height-50){
-    /*bR=random(255);
-    bG=random(255);
-    bB=random(255);*/
     background(255);
   }
 
