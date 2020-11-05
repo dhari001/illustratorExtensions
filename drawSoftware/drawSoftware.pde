@@ -27,75 +27,79 @@ void draw(){
   strokeWeight(1);
   fill(255,0,0);
   
+  //Orange
   rect(0,height-50,50,50);
   fill(255,128,0);
   
+  //Yellow
   rect(50,height-50,50,50);
   fill(255,255,0);
   
+  //Lime Green
   rect(100,height-50,50,50);
   fill(128,255,0);
   
+  //Green
   rect(150,height-50,50,50);
   fill(0,255,0);
   
+  //Blue Green
   rect(200,height-50,50,50);
   fill(0,255,128);
   
+  //Cyan
   rect(250,height-50,50,50);
   fill(0,255,255);
-  
   rect(300,height-50,50,50);
   fill(0,255,255);
   
+  //Light Blue
   rect(300,height-50,50,50);
   fill(0,128,255);
-  
   rect(350,height-50,50,50);
   fill(0,128,255);
   
+  //Royal Blue
   rect(350,height-50,50,50);
   fill(0,0,255);
-  
   rect(400,height-50,50,50);
   fill(0,0,255);
   
+  //Purple
   rect(400,height-50,50,50);
   fill(127,0,255);
-  
   rect(450,height-50,50,50);
   fill(127,0,255);
   
+  //Pink
   rect(450,height-50,50,50);
   fill(255,0,255);
-  
   rect(500,height-50,50,50);
   fill(255,0,255);
   
+  //Pink Red
   rect(500,height-50,50,50);
   fill(255,0,127);
-  
   rect(550,height-50,50,50);
   fill(255,0,127);
   
+  //Gray
   rect(550,height-50,50,50);
   fill(128,128,128);
-  
   rect(600,height-50,50,50);
   fill(128,128,128);
   
+  //Black
   rect(600,height-50,50,50);
   fill(0,0,0);
-  
   rect(650,height-50,50,50);
   fill(0,0,0);
   
+  //White
   rect(650,height-50,50,50);
   fill(255,255,255);
-  
   rect(700,height-50,50,50);
   fill(255,255,255);
-  
   
   
   
