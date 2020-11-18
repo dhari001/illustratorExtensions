@@ -207,6 +207,12 @@ void draw(){
   fill(0);
   text("ERASER",1100,height-20);
   
+  //eraser --> when button pressed, selects color white to erase
+  if(mousePressed && mouseX>1000 && mouseX<1250 && mouseY>height-50){
+    red=255; green=255; black=255;
+
+  }
+  
   
 }
 
@@ -216,8 +222,11 @@ void mousePressed(){
     saveFrame();
   }
   
-  if(mousePressed && mouseX>1000 && mouseX<1250 && mouseY>height-50){
-    background(255);
-  }
+  /*if(mousePressed && mouseX>1000 && mouseX<1250 && mouseY>height-50){
+    //background(255);
+    //fill(255,255,255);
+    //stroke(255);
+
+  }*/
 
 }
