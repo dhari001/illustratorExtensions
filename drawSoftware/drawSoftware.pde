@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 float red = 0;
 float green = 0;
 float black = 0;
@@ -7,11 +9,16 @@ float bG;
 float bB;
 
 int penSize = 1;
+String name;
 
 void setup(){
 
   fullScreen();
   background(255);
+  /*Scanner in = new Scanner(System.in);
+  System.out.print("Please enter a file name ");
+  name = in.nextLine();
+  //System.out.println("Hello " +name + "Welcome to Java.");*/
 }
 
 void draw(){
@@ -229,4 +236,10 @@ void mousePressed(){
 
   }*/
 
+}
+
+void keyPressed(){
+  if(key == ESC){
+   stop();
+  }
 }
