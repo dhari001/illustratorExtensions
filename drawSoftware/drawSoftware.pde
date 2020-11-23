@@ -1,3 +1,6 @@
+import javax.swing.JFileChooser;
+import javax.swing.SwingUtilities;
+
 float red = 0;
 float green = 0;
 float black = 0;
@@ -220,4 +223,43 @@ void mousePressed(){
     background(255);
   }
 
+}
+
+String file_name;
+JFileChooser chooseFile = new JFileChooser();
+
+void openFile(){
+  
+  try{
+    SwingUtilities.invokeLater(new Runnable() {
+      
+      public void run(){
+        int returnValue = chooseFile.showOpenDialog(null);
+        
+        if (returnValue == JFileChooser.CANCEL_OPTION){
+          System.out.println("Cancelled");
+        }
+        
+        if (returnValue == JFileChooser.APPROVE_OPTION){
+          File file = chooseFile.getSelectedFile();
+          file_name = file.getAbsolutePath();
+        }
+        
+        else {
+          file_name = "none";
+        }
+      }
+    }
+    );
+  }
+  catch (Exception e) {
+    e.printStackTrace();
+  }
+}
+
+void keyReleased() {
+  if ( key == 'o'|| key =='O') {
+    openFile();
+    println(file_name);
+  }
 }
