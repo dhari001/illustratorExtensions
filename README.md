@@ -1,7 +1,7 @@
 ## Processing Paint Program
 
 #### Authors
-Dharitri Dixit
+Dharitri Dixit \\
 Taj Loodu
 
 #### About
