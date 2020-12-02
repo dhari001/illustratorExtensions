@@ -1,4 +1,3 @@
-import java.util.Scanner;
 
 float red = 0;
 float green = 0;
@@ -15,10 +14,6 @@ void setup(){
 
   fullScreen();
   background(255);
-  /*Scanner in = new Scanner(System.in);
-  System.out.print("Please enter a file name ");
-  name = in.nextLine();
-  //System.out.println("Hello " +name + "Welcome to Java.");*/
 }
 
 void draw(){
@@ -206,8 +201,7 @@ void draw(){
   rect(950,height-50,50,50);
   fill(0);
   text("SAVE",960,height-20);
-  
-  
+    
   //eraseButton
   fill(100);
   rect(1000,height-50,250,50);
@@ -221,6 +215,7 @@ void draw(){
   }
   
   
+  
 }
 
 void mousePressed(){
@@ -228,13 +223,6 @@ void mousePressed(){
   if(mousePressed && mouseX>950 && mouseX<1000 && mouseY>height-50){
     saveFrame();
   }
-  
-  /*if(mousePressed && mouseX>1000 && mouseX<1250 && mouseY>height-50){
-    //background(255);
-    //fill(255,255,255);
-    //stroke(255);
-
-  }*/
 
 }
 
@@ -242,4 +230,5 @@ void keyPressed(){
   if(key == ESC){
    stop();
   }
+ 
 }
