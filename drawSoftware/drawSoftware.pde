@@ -1,6 +1,7 @@
 import javax.swing.JFileChooser;
 import javax.swing.SwingUtilities;
 
+
 float red = 0;
 float green = 0;
 float black = 0;
@@ -10,6 +11,7 @@ float bG;
 float bB;
 
 int penSize = 1;
+String name;
 
 void setup(){
 
@@ -202,13 +204,19 @@ void draw(){
   rect(950,height-50,50,50);
   fill(0);
   text("SAVE",960,height-20);
-  
-  
+    
   //eraseButton
   fill(100);
   rect(1000,height-50,250,50);
   fill(0);
   text("ERASER",1100,height-20);
+  
+  //eraser --> when button pressed, selects color white to erase
+  if(mousePressed && mouseX>1000 && mouseX<1250 && mouseY>height-50){
+    red=255; green=255; black=255;
+
+  }
+  
   
   
 }
@@ -218,12 +226,9 @@ void mousePressed(){
   if(mousePressed && mouseX>950 && mouseX<1000 && mouseY>height-50){
     saveFrame();
   }
-  
-  if(mousePressed && mouseX>1000 && mouseX<1250 && mouseY>height-50){
-    background(255);
-  }
 
 }
+
 
 String file_name;
 JFileChooser chooseFile = new JFileChooser();
@@ -262,4 +267,10 @@ void keyReleased() {
     openFile();
     println(file_name);
   }
+
+void keyPressed(){
+  if(key == ESC){
+   stop();
+  }
+
 }
