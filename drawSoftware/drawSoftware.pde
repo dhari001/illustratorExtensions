@@ -266,6 +266,7 @@ void keyReleased() {
   if ( key == 'o'|| key =='O') {
     openFile();
     println(file_name);
+    }
   }
 
 void keyPressed(){
